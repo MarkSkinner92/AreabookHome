@@ -1,0 +1,30 @@
+Core Features
+
+Calendar tab
+    Open up to the current day on the dayview
+    Show a day tile bar on the top
+    Allow swiping left and right to forward and back to each day
+
+    Events
+        Draging
+            Dragable (Ghost appears)
+            Dragable up and down auto-scrolls
+            Dragable left and right auto changes day
+            Dragging shows the trash icon
+            Dragging into the trash icon deletes the event
+        Clicking
+            Opens edit menu
+    
+    Edit menu
+        changing title
+        changing start and end time
+        changing category
+        adding notes
+        delete (this, this and future)
+        set reoccuring intervals
+
+Configure tab
+    Add categorys and colors
+
+Sync tab
+    Allows you to sign in/out with google and manually Sync
