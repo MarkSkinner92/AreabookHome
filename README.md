@@ -1,3 +1,16 @@
+Demo images:
+
+<table>
+  <tr>
+    <td><img src="demo1.png" width="100%"></td>
+    <td><img src="demo2.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Main calendar view</td>
+    <td align="center">Syncing ... sign into your Google account, and sync to pull your google calendar</td>
+  </tr>
+</table>
+
 Missionaries use the "Preach my Gospel" app (formerly known as areabook) to plan their day. Every. Single. Day. They come home and want to continue planning their day in the same way with a familiar tool they've grown to love over the past years.
 
 Many people talk about making an app like it that RM's can use. A few tech savey RMs have tried, but it's a lot more work than they expected. I tried a while ago, but got too busy. Since then, people have been asking about how the apps been coming, and in truth I haven't been working on it. However, I picked up the project again just recently, and with the help of ChatGPT, I was able to make substantial progress with Flutter. I also had some ideas to make the project less daunting by reducing the scope.

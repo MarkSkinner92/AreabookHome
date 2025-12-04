@@ -50,43 +50,43 @@ class _CalendarPageState extends State<CalendarPage> {
       title: 'STUDY OR PLAN',
       start: TimeOfDay(hour: 8, minute: 0),
       end: TimeOfDay(hour: 10, minute: 0),
-      color: Colors.purpleAccent.shade100,
+      color: const Color(0xFFF3E4FF),
     ),
     Event(
       title: 'TRAVEL',
       start: TimeOfDay(hour: 10, minute: 30),
       end: TimeOfDay(hour: 11, minute: 0),
-      color: Colors.redAccent.shade100,
+      color: const Color(0xffFFE8EB),
     ),
     Event(
       title: 'CONTACT',
       start: TimeOfDay(hour: 11, minute: 0),
       end: TimeOfDay(hour: 13, minute: 0),
-      color: Colors.greenAccent.shade100,
+      color: const Color(0xFFEFFFE6),
     ),
     Event(
       title: 'SERVICE',
       start: TimeOfDay(hour: 13, minute: 30),
       end: TimeOfDay(hour: 14, minute: 30),
-      color: Colors.blueAccent.shade100,
+      color: const Color(0xFFE2F4FF),
     ),
     Event(
       title: 'FINDING',
       start: TimeOfDay(hour: 14, minute: 0),
       end: TimeOfDay(hour: 16, minute: 0),
-      color: Colors.pinkAccent.shade100,
+      color: const Color(0xFFFFE7FD),
     ),
     Event(
       title: 'TEACHING',
       start: TimeOfDay(hour: 16, minute: 0),
       end: TimeOfDay(hour: 17, minute: 0),
-      color: Colors.yellowAccent.shade100,
+      color: const Color(0xFFFFF6D5),
     ),
     Event(
       title: 'DINNER',
       start: TimeOfDay(hour: 17, minute: 0),
       end: TimeOfDay(hour: 18, minute: 0),
-      color: Colors.orangeAccent.shade100,
+      color: const Color(0xFFFFF7EA),
     ),
   ];
 
@@ -141,7 +141,7 @@ class _CalendarPageState extends State<CalendarPage> {
                   child: Row(
                     children: [
                       SizedBox(
-                        width: 60,
+                        width: 48,
                         child: Text(
                           '${index % 12 == 0 ? 12 : index % 12} ${index < 12 ? 'AM' : 'PM'}',
                           textAlign: TextAlign.right,

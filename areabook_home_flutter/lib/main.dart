@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Day View Calendar',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.white
       ),
       home: const HomeScreen(),   // <-- FIXED
     );

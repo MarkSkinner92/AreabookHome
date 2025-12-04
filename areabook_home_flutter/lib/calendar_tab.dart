@@ -15,50 +15,49 @@ class _CalendarTabState extends State<CalendarTab> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-
-        AppBar(
-          backgroundColor: const Color.fromARGB(255, 155, 1, 65),
-          elevation: 0,
-          title: Text(
-            DateFormat('MMM d').format(selectedDate),
-            style: const TextStyle(color: Colors.white),
-          ),
-          actions: [
-            IconButton(
-              icon: const Icon(
-                Icons.calendar_today_outlined,
-                color: Colors.white,
-              ),
-              onPressed: () {},
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 155, 1, 65),
+        elevation: 0,
+        title: Text(
+          DateFormat('MMM d').format(selectedDate),
+          style: const TextStyle(color: Colors.white),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(
+              Icons.calendar_today_outlined,
+              color: Colors.white,
             ),
-            IconButton(
-              icon: const Icon(Icons.filter_list, color: Colors.white),
-              onPressed: () {},
-            ),
-          ],
-        ),
-
-        // ----- FIXED DAY PICKER -----
-        HorizontalDayPicker(
-          startDate: DateTime.now(),
-          totalDays: 14,
-          initialSelectedDate: selectedDate,
-          onDateSelected: (date) {
-            setState(() {
-              selectedDate = date;
-            });
-          },
-        ),
-
-        // ----- SCROLLING CALENDAR -----
-        Expanded(
-          child: CalendarPage(
-            selectedDate: selectedDate,
+            onPressed: () {},
           ),
-        ),
-      ],
+          IconButton(
+            icon: const Icon(Icons.filter_list, color: Colors.white),
+            onPressed: () {},
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          HorizontalDayPicker(
+            startDate: DateTime.now(),
+            totalDays: 14,
+            initialSelectedDate: selectedDate,
+            onDateSelected: (date) {
+              setState(() {
+                selectedDate = date;
+              });
+            },
+          ),
+
+          Expanded(
+            child: CalendarPage(
+              selectedDate: selectedDate,
+            ),
+          ),
+        ],
+      ),
     );
   }
+
 }
