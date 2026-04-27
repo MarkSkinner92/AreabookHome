@@ -11,9 +11,9 @@ Demo images:
   </tr>
 </table>
 
-Missionaries use the "Preach my Gospel" app (formerly known as areabook) to plan their day. Every. Single. Day. They come home and want to continue planning their day in the same way with a familiar tool they've grown to love over the past years.
+#Note: I am working on other projects at the moment and might not come back to this
 
-Many people talk about making an app like it that RM's can use. A few tech savey RMs have tried, but it's a lot more work than they expected. I tried a while ago, but got too busy. Since then, people have been asking about how the apps been coming, and in truth I haven't been working on it. However, I picked up the project again just recently, and with the help of ChatGPT, I was able to make substantial progress with Flutter. I also had some ideas to make the project less daunting by reducing the scope.
+Missionaries use the "Preach my Gospel" app (formerly known as areabook) to plan their day. Every. Single. Day. They come home and want to continue planning their day in the same way with a familiar tool they've grown to love over the past years.
 
 A couple design principles are guiding this project:
 1) I want it to LOOK AND FEEL AS SIMILAR to the PMG app as possible.
@@ -21,4 +21,4 @@ A couple design principles are guiding this project:
 3) There will be NO server. I am planning to use Google Calendar, and have all the UI actions make callbacks to the Google Calendar API. The sync tab will allow users to sign in with google, but WILL NOT save info about a user. It will just allow us to make google calendar API calls. Thats it.
 4) Pull requests are welcomed! If you want to chat, raise an issue and we'll discuss it.
 
-In short. I don't want this to become a piece of half-working bloatware that so much of the software we use today is. I want it to be clean, fast, and minimal while giving RM's a familiar and pleasant experience.
+I want it to be clean, fast, and minimal while giving RM's a familiar and pleasant experience.
